@@ -9,7 +9,7 @@ package classeBanque;
  *
  * @author barbacole
  */
-public abstract class Client {
+public abstract class Client implements BanqueInterface {
    private String ville;
 
     public Client(String ville) {

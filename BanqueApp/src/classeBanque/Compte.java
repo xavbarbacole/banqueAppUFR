@@ -9,7 +9,7 @@ package classeBanque;
  *
  * @author barbacole
  */
-public abstract class Compte {
+public abstract class Compte implements BanqueInterface {
     private int solde;
     private String numCpt;
     private Client unClient;

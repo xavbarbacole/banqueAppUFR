@@ -12,6 +12,7 @@ import classeBanque.Particulier;
 import classeBanque.Entreprise;
 import classeBanque.Administration;
 import classeBanque.Banque;
+//import classeBanque.BanqueInterface;
 
 
 
@@ -55,25 +56,26 @@ public class BanqueApp {
       
       Banque maBanque ;
       maBanque = new Banque("Crédit FC",mesClients); //avec 100 comptes
-      maBanque.afficheClients();
+//      maBanque.afficheClients();
       
       // affectue des comptes à des client
-      if (maBanque.ajouterCompteEpargne(mesClients[0], 100,10,1)) {System.out.println("impossible d'ajouter un compte Epargne au client "+0);}
-      if (!maBanque.ajouterCompteCourrant(mesClients[0], 101)) {System.out.println("impossible d'ajouter un compte courrant au client "+0);}
-      if (!maBanque.ajouterCompteEpargne(mesClients[1], 110,10,1)) {System.out.println("impossible d'ajouter un compte Epargne au client "+1);}
-      if (!maBanque.ajouterCompteCourrant(mesClients[1], 111)) {System.out.println("impossible d'ajouter un compte courrant au client "+1);}
-      if (!maBanque.ajouterCompteEpargne(mesClients[2], 220,20,2)) {System.out.println("impossible d'ajouter un compte Epargne au client "+2);}
-      if (!maBanque.ajouterCompteCourrant(mesClients[2], 221)) {System.out.println("impossible d'ajouter un compte courrant au client "+2);}
-      if (!maBanque.ajouterCompteEpargne(mesClients[3], 330,30,3)) {System.out.println("impossible d'ajouter un compte Epargne au client "+3);}
-      if (!maBanque.ajouterCompteCourrant(mesClients[3], 331)) {System.out.println("impossible d'ajouter un compte courrant au client "+3);}
-      if (!maBanque.ajouterCompteEpargne(mesClients[4], 440,40,4)) {System.out.println("impossible d'ajouter un compte Epargne au client "+4);}
-      if (!maBanque.ajouterCompteCourrant(mesClients[4], 441)) {System.out.println("impossible d'ajouter un compte courrant au client "+4);}
-      if (!maBanque.ajouterCompteEpargne(mesClients[5], 550,50,5)) {System.out.println("impossible d'ajouter un compte Epargne au client "+5);}
-      if (!maBanque.ajouterCompteCourrant(mesClients[5], 551)) {System.out.println("impossible d'ajouter un compte courrant au client "+5);}
-      if (!maBanque.ajouterCompteEpargne(mesClients[6], 660,60,6)) {System.out.println("impossible d'ajouter un compte Epargne au client "+6);}
-      if (!maBanque.ajouterCompteCourrant(mesClients[6], 661)) {System.out.println("impossible d'ajouter un compte courrant au client "+6);}
+      if (!maBanque.ajouterCompte(mesClients[0], 100,10,1)) {System.out.println("impossible d'ajouter un compte Epargne au client "+0);}
+      if (!maBanque.ajouterCompte(mesClients[0], 101)) {System.out.println("impossible d'ajouter un compte courrant au client "+0);}
+      if (!maBanque.ajouterCompte(mesClients[1], 110,10,1)) {System.out.println("impossible d'ajouter un compte Epargne au client "+1);}
+      if (!maBanque.ajouterCompte(mesClients[1], 111)) {System.out.println("impossible d'ajouter un compte courrant au client "+1);}
+      if (!maBanque.ajouterCompte(mesClients[2], 220,20,2)) {System.out.println("impossible d'ajouter un compte Epargne au client "+2);}
+      if (!maBanque.ajouterCompte(mesClients[2], 221)) {System.out.println("impossible d'ajouter un compte courrant au client "+2);}
+      if (!maBanque.ajouterCompte(mesClients[3], 330,30,3)) {System.out.println("impossible d'ajouter un compte Epargne au client "+3);}
+      if (!maBanque.ajouterCompte(mesClients[3], 331)) {System.out.println("impossible d'ajouter un compte courrant au client "+3);}
+      if (!maBanque.ajouterCompte(mesClients[4], 440,40,4)) {System.out.println("impossible d'ajouter un compte Epargne au client "+4);}
+      if (!maBanque.ajouterCompte(mesClients[4], 441)) {System.out.println("impossible d'ajouter un compte courrant au client "+4);}
+      if (!maBanque.ajouterCompte(mesClients[5], 550,50,5)) {System.out.println("impossible d'ajouter un compte Epargne au client "+5);}
+      if (!maBanque.ajouterCompte(mesClients[5], 551)) {System.out.println("impossible d'ajouter un compte courrant au client "+5);}
+      if (!maBanque.ajouterCompte(mesClients[6], 660,60,6)) {System.out.println("impossible d'ajouter un compte Epargne au client "+6);}
+      if (!maBanque.ajouterCompte(mesClients[6], 661)) {System.out.println("impossible d'ajouter un compte courrant au client "+6);}
 
-      maBanque.afficheComptes();
+//      maBanque.afficheComptes();
+      maBanque.affiche();
 }
     
 }
